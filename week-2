@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007bff;
+            color: white;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>📌 Steps to Complete Registration</h2>
+    <ol type="I">
+        <li>Fill out the registration form.</li>
+        <li>Verify your email.</li>
+        <li>Choose a subscription plan.</li>
+        <li>Complete the payment.</li>
+        <li>Start using the service!</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>🌄 Featured Image</h2>
+    <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Beautiful Nature" width="500">
+
+    <!-- Table of 5 Contacts -->
+    <h2>📞 Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Street, NY</td>
+            <td>+2531234567890</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Avenue, Kisumu</td>
+            <td>+256987654</td>
+            <td>jane@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael Brown</td>
+            <td>789 Nairobi, TX</td>
+            <td>+124778887777</td>
+            <td>michael@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>321 Blvd, FL</td>
+            <td>+25572322324</td>
+            <td>emily@example.com</td>
+        </tr>
+        <tr>
+            <td>Chris Bett</td>
+            <td>654 Lane, WA</td>
+            <td>+1 222 111 0000</td>
+            <td>chris@example.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>📝 Registration Form</h2>
+    <form action="#" method="post">
+        
+        <!-- Name -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required minlength="6">
+        </div>
+
+        <!-- Date of Birth -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Dropdown: Country Selection -->
+        <div class="form-group">
+            <label for="country">Select Your Country:</label>
+            <select id="country" name="country" required>
+                <option value="">-- Select Country --</option>
+                <option value="USA">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="Australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons: Gender -->
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Checkboxes: Interests -->
+        <div class="form-group">
+            <label>Interests:</label><br>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="reading" name="interests" value="Reading">
+            <label for="reading">Reading</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Multimedia Elements -->
+    <h2>🎵 Audio & Video</h2>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video controls width="400">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+</body>
+</html>
